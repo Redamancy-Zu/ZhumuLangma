@@ -1,18 +1,24 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+		<!-- <view class="iconfont icon-bofang">
+			
+		</view> -->
+		<my-icon iconName="icon-xihuan2" iconColor="text-dark" iconSize="200"></my-icon>
+		<view style="width:100rpx; height: 100rpx; background-color: red;"
+		class="animated" hover-class="flip"></view>
 	</view>
 </template>
 
 <script>
+	import myIcon from '../../components/icon.vue'
 	export default {
 		data() {
 			return {
 				title: 'Hello'
 			}
+		},
+		components:{
+			myIcon
 		},
 		onLoad() {
 
